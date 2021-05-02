@@ -1,6 +1,6 @@
 ## List 8 (12 Maturity Indicators)
 
-Descriptors of the Nanomaterial Registry minimal information about nanomaterials (MIAN)’s physicochemical characterization (PCC)
+Descriptors of the Nanomaterial Registry minimal information about nanomaterials (MIAN) physicochemical characterization (PCC)
 
 ## Reference Publication
 
