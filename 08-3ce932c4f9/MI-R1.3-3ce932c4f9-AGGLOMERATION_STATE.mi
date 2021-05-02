@@ -27,8 +27,8 @@ WHAT_MUST_PROVIDED=If the value is measured and reported in the data, the follow
 | Field Name          | Alternative terms                                                                                                   |\n\
 | ------------------- | ------------------------------------------------------------------------------------------------------------------- |\n\
 | agglomeration state | agglomeration-state,<br>agglomeration_state,<br>AgglomerationState,<br>aggregation,<br>Aggregation,<br>AGGREGATION  |
-HOW_MEASUREMENT_EXECUTED=The nanomaterial's composition should be provided in a machine-readable format (JSON-LD) which can be queried using open universal protocol like HTTP.
-WHAT_CONSIDERED_VALID_RESULTS=The presence of the field "composition" in the JSON-LD metadata means the measurement is reported which is the valid result.
+HOW_MEASUREMENT_EXECUTED=The nanomaterial's agglomeration state should be provided in a machine-readable format (JSON-LD) which can be queried using open universal protocol like HTTP.
+WHAT_CONSIDERED_VALID_RESULTS=The presence of the field "agglomeration state" in the JSON-LD metadata means the measurement is reported which is the valid result.
 FOR_WHICH_DIGITAL_RESOURCE=For nano toxicity related datasets. 
 GOOD_PRACTICE_EXAMPLE=\
 {\n \
@@ -49,7 +49,7 @@ GOOD_PRACTICE_EXAMPLE=\
 \t"variableMeasured": [\n \
 \t\t{\n \
 \t\t\t"@type": "schema:PropertyValue",\n \
-\t\t\t"name": "composition"\n \
+\t\t\t"name": "agglomeration state"\n \
 \t\t}\n \
 \t]\n \
 }

@@ -26,9 +26,9 @@ WHAT_MUST_PROVIDED=If the value is measured and reported in the data, the follow
 \n\
 | Field Name                | Alternative terms                            |\n\
 | ------------------------- | -------------------------------------------- |\n\
-| exposure duration         | exposure-duration,<br>exposure_duration      |
+| exposure duration in-vivo | exposure-duration-in-vivo,<br>exposure_duration_in_vivo      |
 HOW_MEASUREMENT_EXECUTED=The exposure duration should be provided in a machine-readable format (JSON-LD) which can be queried using open universal protocol like HTTP.
-WHAT_CONSIDERED_VALID_RESULTS=The presence of the field "exposure duration" in the JSON-LD metadata means the measurement is reported which is the valid result.
+WHAT_CONSIDERED_VALID_RESULTS=The presence of the field "exposure duration in-vivo" in the JSON-LD metadata means the measurement is reported which is the valid result.
 FOR_WHICH_DIGITAL_RESOURCE=For nano toxicity related datasets. 
 GOOD_PRACTICE_EXAMPLE=\
 {\n \
@@ -49,7 +49,7 @@ GOOD_PRACTICE_EXAMPLE=\
 \t"variableMeasured": [\n \
 \t\t{\n \
 \t\t\t"@type": "schema:PropertyValue",\n \
-\t\t\t"name": "exposure duration"\n \
+\t\t\t"name": "exposure duration in-vivo"\n \
 \t\t}\n \
 \t]\n \
 }

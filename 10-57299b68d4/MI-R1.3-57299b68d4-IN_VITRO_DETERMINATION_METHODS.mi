@@ -24,11 +24,11 @@ WHAT_MEASURED=If the determination methods of the study endpoints are reported b
 WHY_MEASURED=This is one of the quality measure that need to be reported by toxicity risk assessment experiments as decided in the RiskGONE EU project.
 WHAT_MUST_PROVIDED=If the value is measured and reported in the data, the following field(s) should appear in JSON-LD metadata: \n\
 \n\
-| Field Name                | Alternative terms                               |\n\
-| ------------------------- | ----------------------------------------------- |\n\
-| determination methods     | determination-methods,<br>determination_methods |
+| Field Name                         | Alternative terms                               |\n\
+| ---------------------------------- | ----------------------------------------------- |\n\
+| determination methods in-vitro     | determination-methods-in-vitro,<br>determination_methods_in_vitro |
 HOW_MEASUREMENT_EXECUTED=The determination methods should be provided in a machine-readable format (JSON-LD) which can be queried using open universal protocol like HTTP.
-WHAT_CONSIDERED_VALID_RESULTS=The presence of the field "determination methods" in the JSON-LD metadata means the measurement is reported which is the valid result.
+WHAT_CONSIDERED_VALID_RESULTS=The presence of the field "determination methods in-vitro" in the JSON-LD metadata means the measurement is reported which is the valid result.
 FOR_WHICH_DIGITAL_RESOURCE=For nano toxicity related datasets. 
 GOOD_PRACTICE_EXAMPLE=\
 {\n \
@@ -49,7 +49,7 @@ GOOD_PRACTICE_EXAMPLE=\
 \t"variableMeasured": [\n \
 \t\t{\n \
 \t\t\t"@type": "schema:PropertyValue",\n \
-\t\t\t"name": "determination methods"\n \
+\t\t\t"name": "determination methods in-vitro"\n \
 \t\t}\n \
 \t]\n \
 }

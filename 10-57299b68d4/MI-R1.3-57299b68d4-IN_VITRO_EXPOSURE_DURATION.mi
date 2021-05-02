@@ -24,11 +24,11 @@ WHAT_MEASURED=If the exposure duration/time-points of observation are reported b
 WHY_MEASURED=This is one of the quality measure that need to be reported by toxicity risk assessment experiments as decided in the RiskGONE EU project.
 WHAT_MUST_PROVIDED=If the value is measured and reported in the data, the following field(s) should appear in JSON-LD metadata: \n\
 \n\
-| Field Name                | Alternative terms                            |\n\
-| ------------------------- | -------------------------------------------- |\n\
-| exposure duration         | exposure-duration,<br>exposure_duration      |
+| Field Name                 | Alternative terms                                           |\n\
+| -------------------------- | ----------------------------------------------------------- |\n\
+| exposure duration in-vitro | exposure-duration-in-vitro,<br>exposure_duration_in_vitro   |
 HOW_MEASUREMENT_EXECUTED=The exposure duration should be provided in a machine-readable format (JSON-LD) which can be queried using open universal protocol like HTTP.
-WHAT_CONSIDERED_VALID_RESULTS=The presence of the field "exposure duration" in the JSON-LD metadata means the measurement is reported which is the valid result.
+WHAT_CONSIDERED_VALID_RESULTS=The presence of the field "exposure duration in-vitro" in the JSON-LD metadata means the measurement is reported which is the valid result.
 FOR_WHICH_DIGITAL_RESOURCE=For nano toxicity related datasets. 
 GOOD_PRACTICE_EXAMPLE=\
 {\n \
@@ -49,7 +49,7 @@ GOOD_PRACTICE_EXAMPLE=\
 \t"variableMeasured": [\n \
 \t\t{\n \
 \t\t\t"@type": "schema:PropertyValue",\n \
-\t\t\t"name": "exposure duration"\n \
+\t\t\t"name": "exposure duration in-vitro"\n \
 \t\t}\n \
 \t]\n \
 }
