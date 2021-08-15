@@ -5,5 +5,5 @@ This repository aims at providing maturity indicators (MI) to assess the FAIRnes
 
 The Maturity indicators are defined using Java properties files which are simple key/value pairs format files where each line is a key/value pair split by equal sign "=".
 
-This repository is supposed to be used with the [FAIR Maturity Indicators **Generator** for NanoSafety Data Reusability](https://github.com/NSDRA/fair-maturity-indicators-generator)
+This repository is supposed to be used with the [FAIR Maturity Indicators **Generator** for NanoSafety Data Reusability](https://github.com/NSDRA/nsdra-maturity-indicators-generator)
 
