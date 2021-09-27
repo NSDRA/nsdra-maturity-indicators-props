@@ -1,0 +1,75 @@
+TITLE=MI-R1.3-d2c4887a02-PROTOCOL_ADMINISTERED_DOSE
+AUTHOR1_NAME=Ammar Ammar
+AUTHOR1_ORCID=0000-0002-8399-8990
+PUBLICATION_DATE=2021-09-08
+LAST_EDIT=2021-08-18
+ACCEPTED=pending
+IDENTIFIER=MI-R1.3-d2c4887a02-PROTOCOL_ADMINISTERED_DOSE
+IDENTIFIER_DESC=This maturity indicator falls under the FAIR principle R1.3:\n\
+(meta)data meet domain-relevant community standards\n\
+\n\
+The ID of this MI is composed of the following segments (separated by hyphen):\n\
+1. Acronym for "Maturity Indicator"\n\
+1. The FAIR principle this maturity indicator belongs to\n\
+1. The first 10 characters truncated from the SHA-256 hash of the primary reference DOI of this maturity indicator.\n\
+1. A short name to distinguish the maturity indicator definition file\n\
+\n\
+This MI is to indicate if the "administered dose" is reported by the nano toxicity study data or not.
+NAME=The administered dose is reported by the nano toxicity study
+NAME_DESC= This maturity indicator is extracted from the following paper \n\
+**Title:** Minimum information reporting in bio–nano experimental literature\n\
+**REF:** https://doi.org/10.1038/s41565-018-0246-4
+WHICH_PRINCIPLE=R1.3
+WHAT_MEASURED=If the administered dose is reported by the nano toxicity study data or not.
+WHY_MEASURED=The amount of material added during an \
+experiment is an obvious component that needs to be accurately \
+reported. However, the choice of units for this parameter is less \
+obvious. For cell culture experiments, mass, volume, particle number \
+and surface area are all common choices for measuring 'nanodosage'. \
+We recommend providing sufficient characterization \
+information so that interested researchers can calculate all four of \
+these dosage metrics, and we include details of required information \
+in the checklist (Supplementary Information). In cases where \
+the dose is administered in a complex way (for example, fluidic \
+particle–cell experiments), the method of administration should be \
+clear. For instance, in the case of fluidic incubation, whether the \
+dose was from a singular reservoir, kept constant, or recycled should \
+be noted, as should flow rate. In the case of an in vivo experiment, \
+administration details should include vehicle of administration, \
+injection/administration location, total volume and concentration \
+administered, and details about multiple infusions (that is, time \
+points or rate of administration). Additionally, methods used to \
+normalize dosage (for example, to body weight) should be reported, \
+as should the concentrations before and after normalization.
+WHAT_MUST_PROVIDED=If the value is measured and reported in the data, the following field(s) should appear in JSON-LD metadata: \n\
+\n\
+| Field Name         | Alternative terms                           |\n\
+| ------------------ | ------------------------------------------- |\n\
+| administered dose  | administered-dose,<br>administered_dose     |
+HOW_MEASUREMENT_EXECUTED=The "administered dose" should be provided in a machine-readable format (JSON-LD) which can be queried using open universal protocol like HTTP.
+WHAT_CONSIDERED_VALID_RESULTS=The presence of the field "administered dose" in the JSON-LD metadata means the measurement is reported which is the valid result.
+FOR_WHICH_DIGITAL_RESOURCE=For nano toxicity related datasets. 
+GOOD_PRACTICE_EXAMPLE=\
+{\n \
+\t"@context": {\n \
+\t\t"bs": "https://bioschemas.org/",\n \
+\t\t"schema": "https://schema.org/",\n \
+\t\t"citation": "schema:citation",\n \
+\t\t"name": "schema:name",\n \
+\t\t"url": "schema:url",\n \
+\t\t"variableMeasured": "schema:variableMeasured",\n \
+\t\t"unitText": "schema:unitText"\n \
+\t},\n \
+\t"@type": "schema:Dataset",\n \
+\t"name": "Dataset title",\n \
+\t"@id": "Dataset DOI",\n \
+\t"url": "Dataset URL",\n \
+\t"citation": "Dataset Citation/Publication",\n \
+\t"variableMeasured": [\n \
+\t\t{\n \
+\t\t\t"@type": "schema:PropertyValue",\n \
+\t\t\t"name": "administered dose"\n \
+\t\t}\n \
+\t]\n \
+}
+COMMENTS=

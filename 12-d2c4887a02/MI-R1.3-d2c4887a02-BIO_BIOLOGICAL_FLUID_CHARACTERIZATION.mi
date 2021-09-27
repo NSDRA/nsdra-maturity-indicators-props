@@ -1,0 +1,75 @@
+TITLE=MI-R1.3-d2c4887a02-BIO_BIOLOGICAL_FLUID_CHARACTERIZATION
+AUTHOR1_NAME=Ammar Ammar
+AUTHOR1_ORCID=0000-0002-8399-8990
+PUBLICATION_DATE=2021-09-08
+LAST_EDIT=2021-08-18
+ACCEPTED=pending
+IDENTIFIER=MI-R1.3-d2c4887a02-BIO_BIOLOGICAL_FLUID_CHARACTERIZATION
+IDENTIFIER_DESC=This maturity indicator falls under the FAIR principle R1.3:\n\
+(meta)data meet domain-relevant community standards\n\
+\n\
+The ID of this MI is composed of the following segments (separated by hyphen):\n\
+1. Acronym for "Maturity Indicator"\n\
+1. The FAIR principle this maturity indicator belongs to\n\
+1. The first 10 characters truncated from the SHA-256 hash of the primary reference DOI of this maturity indicator.\n\
+1. A short name to distinguish the maturity indicator definition file\n\
+\n\
+This MI is to indicate if the "biological fluid characterization" is reported by the nano toxicity study data or not.
+NAME=The biological fluid characterization is reported by the nano toxicity study
+NAME_DESC= This maturity indicator is extracted from the following paper \n\
+**Title:** Minimum information reporting in bio–nano experimental literature\n\
+**REF:** https://doi.org/10.1038/s41565-018-0246-4
+WHICH_PRINCIPLE=R1.3
+WHAT_MEASURED=If the biological fluid characterization is reported by the nano toxicity study data or not.
+WHY_MEASURED=The biomolecules that adhere \
+to a nanomaterial on contact with a biological fluid substantially \
+alter key particle properties. Thus, there has been substantial \
+research into the formation of 'protein coronas' around particles, \
+and how these coronas influence biological response. For culture \
+media, type and percentage of serum added, if any, should be \
+included. Information on media and serum should include ordering \
+and batch details, species of origin, and details of additives (for \
+example, antibiotics) or stabilizing agents. When investigating the \
+effects of biological fluids, it is essential to subject the fluid to the \
+same degree of characterization as the nanomaterial/fluid. For \
+instance, if a nanoparticle is incubated with serum and relative \
+concentrations of protein adsorbed onto the particle are reported, \
+relative concentrations of proteins in bare serum should also be \
+reported. Alternatively, if a fluid has established reference values \
+for protein composition, cell presence and so on, these references \
+can be specified. Unless the characterization of biological fluids is \
+conducted, it is difficult (if not impossible) to determine whether \
+differences in nanomaterial response are due to their properties or \
+to biological variation.
+WHAT_MUST_PROVIDED=If the value is measured and reported in the data, the following field(s) should appear in JSON-LD metadata: \n\
+\n\
+| Field Name                         | Alternative terms                                                        |\n\
+| ---------------------------------- | ------------------------------------------------------------------------ |\n\
+| biological fluid characterization  | biological-fluid-characterization,<br>biological_fluid_characterization  |
+HOW_MEASUREMENT_EXECUTED=The "biological fluid characterization" should be provided in a machine-readable format (JSON-LD) which can be queried using open universal protocol like HTTP.
+WHAT_CONSIDERED_VALID_RESULTS=The presence of the field "biological fluid characterization" in the JSON-LD metadata means the measurement is reported which is the valid result.
+FOR_WHICH_DIGITAL_RESOURCE=For nano toxicity related datasets. 
+GOOD_PRACTICE_EXAMPLE=\
+{\n \
+\t"@context": {\n \
+\t\t"bs": "https://bioschemas.org/",\n \
+\t\t"schema": "https://schema.org/",\n \
+\t\t"citation": "schema:citation",\n \
+\t\t"name": "schema:name",\n \
+\t\t"url": "schema:url",\n \
+\t\t"variableMeasured": "schema:variableMeasured",\n \
+\t\t"unitText": "schema:unitText"\n \
+\t},\n \
+\t"@type": "schema:Dataset",\n \
+\t"name": "Dataset title",\n \
+\t"@id": "Dataset DOI",\n \
+\t"url": "Dataset URL",\n \
+\t"citation": "Dataset Citation/Publication",\n \
+\t"variableMeasured": [\n \
+\t\t{\n \
+\t\t\t"@type": "schema:PropertyValue",\n \
+\t\t\t"name": "biological fluid characterization"\n \
+\t\t}\n \
+\t]\n \
+}
+COMMENTS=
